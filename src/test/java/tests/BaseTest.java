@@ -16,6 +16,7 @@ public class BaseTest {
     AutomationExerciseContactUsPage contactUs = new AutomationExerciseContactUsPage();
     AutomationExerciseProductsPage productsPage = new AutomationExerciseProductsPage();
     AutomationExerciseViewCartPage cartPage = new AutomationExerciseViewCartPage();
+    AutomationExercisePaymentPage paymentPage = new AutomationExercisePaymentPage();
     Actions actions = new Actions(Driver.getDriver());
 
     @BeforeMethod
@@ -24,8 +25,8 @@ public class BaseTest {
         mainPage.verifyMainPageIsOpen();
     }
 
-    @AfterMethod
+    /*@AfterMethod
     public void tearDown() {
         Driver.closeDriver();
-    }
+    }*/
 }

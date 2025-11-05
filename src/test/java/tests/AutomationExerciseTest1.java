@@ -39,7 +39,7 @@ public class AutomationExerciseTest1 extends BaseTest{
 
         Assert.assertTrue(signupPage.newUserTitle.isDisplayed());
 
-        signupPage.signupName.sendKeys(ConfigReader.getProperty("ad") + Keys.ENTER + ConfigReader.getProperty("email") + Keys.ENTER);
+        signupPage.signupName.sendKeys(ConfigReader.getProperty("name") + Keys.ENTER + ConfigReader.getProperty("email") + Keys.ENTER);
         Assert.assertTrue(signupPage.signupTitle.isDisplayed());
 
         actions.click(signupPage.gender)

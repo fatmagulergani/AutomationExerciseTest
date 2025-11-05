@@ -25,4 +25,36 @@ public class AutomationExerciseViewCartPage extends BasePage {
 
     @FindBy (xpath = "//table/tbody/tr/td[@class='cart_total']")
     public List<WebElement> cartProductTotal;
+
+    @FindBy (xpath = "//*[text()='Shopping Cart']")
+    public WebElement shoppingCartText;
+
+    @FindBy (xpath = "//a[@class='btn btn-default check_out']")
+    public WebElement proceedToCheckoutButton;
+
+    @FindBy (xpath = "//u[text()='Register / Login']")
+    public WebElement login;
+
+    @FindBy (xpath = "//li[@class='address_firstname address_lastname'][1]")
+    public WebElement orderPersonName;
+
+    @FindBy (xpath = "//li[@class='address_address1 address_address2']")
+    public List<WebElement> orderAddress;
+
+    @FindBy (xpath = "//li[@class='address_city address_state_name address_postcode'][1]")
+    public WebElement orderAddress2;
+
+    @FindBy (xpath = "//li[@class='address_country_name']")
+    public WebElement orderAddress3;
+
+    @FindBy (xpath = "//li[@class='address_phone']")
+    public WebElement orderAddressTel;
+
+    @FindBy (xpath = "//textarea[@class='form-control']")
+    public WebElement form;
+
+    @FindBy (xpath = "//a[@class='btn btn-default check_out']")
+    public WebElement placeOrder;
+
+
 }

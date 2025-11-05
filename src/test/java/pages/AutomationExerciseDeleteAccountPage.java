@@ -13,4 +13,7 @@ public class AutomationExerciseDeleteAccountPage {
     @FindBy (xpath = "//*[text()='Account Deleted!']")
     public WebElement deleteAccountWarning;
 
+    @FindBy (xpath = "//a[@data-qa='continue-button']")
+    public WebElement continueButton;
+
 }

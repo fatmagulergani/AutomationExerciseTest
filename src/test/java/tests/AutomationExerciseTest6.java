@@ -30,7 +30,7 @@ public class AutomationExerciseTest6 extends BaseTest{
 
         Assert.assertTrue(contactUs.getInTouchText.isDisplayed());
 
-        contactUs.name.sendKeys(ConfigReader.getProperty("ad") + Keys.TAB
+        contactUs.name.sendKeys(ConfigReader.getProperty("name") + Keys.TAB
         + ConfigReader.getProperty("validEmail") + Keys.TAB + "My Subject" + Keys.TAB
         + "My message is here." + Keys.TAB);
         contactUs.uploadFile.sendKeys(ConfigReader.getProperty("filePath"));

@@ -26,7 +26,7 @@ public class AutomationExerciseTest5 extends BaseTest{
 
         Assert.assertTrue(signupPage.newUserTitle.isDisplayed());
 
-        signupPage.signupName.sendKeys(ConfigReader.getProperty("ad") + Keys.TAB + ConfigReader.getProperty("validEmail") + Keys.ENTER);
+        signupPage.signupName.sendKeys(ConfigReader.getProperty("name") + Keys.TAB + ConfigReader.getProperty("validEmail") + Keys.ENTER);
         Assert.assertTrue(signupPage.existUserWarning.isDisplayed());
 
     }

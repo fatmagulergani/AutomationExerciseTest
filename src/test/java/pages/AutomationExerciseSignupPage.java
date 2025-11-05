@@ -36,4 +36,7 @@ public class AutomationExerciseSignupPage {
     @FindBy (xpath = "//h2[@data-qa='account-created']")
     public WebElement accountCreated;
 
+    @FindBy (xpath = "//a[@data-qa='continue-button']")
+    public WebElement continueButton;
+
 }
