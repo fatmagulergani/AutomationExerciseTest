@@ -1,13 +1,12 @@
 package utilities;
 
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pages.AutomationExerciseMainPage;
 
 public class BasePage {
-
-    public static AutomationExerciseMainPage automationExerciseMainPage;
 
     // Sayfayı verilen URL ile açar
     public void openPage(String url) {

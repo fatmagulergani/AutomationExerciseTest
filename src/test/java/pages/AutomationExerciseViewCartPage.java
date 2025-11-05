@@ -56,5 +56,11 @@ public class AutomationExerciseViewCartPage extends BasePage {
     @FindBy (xpath = "//a[@class='btn btn-default check_out']")
     public WebElement placeOrder;
 
+    @FindBy (xpath = "//a[@class='cart_quantity_delete']")
+    public List<WebElement> removeProduct;
+
+    @FindBy (xpath = "//p/b[text()='Cart is empty!']")
+    public WebElement cartEmptyText;
+
 
 }
