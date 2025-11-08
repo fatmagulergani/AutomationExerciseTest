@@ -62,6 +62,27 @@ public class AutomationExerciseMainPage extends BasePage {
     @FindBy (xpath = "//button[@class='btn btn-success close-modal btn-block']")
     public WebElement continueShoppingButton;
 
+    @FindBy (xpath = "//*[text()='Category']")
+    public WebElement categoryTitle;
+
+    @FindBy (xpath = "//a[@href='#Women']")
+    public WebElement categoryWomen;
+
+    @FindBy (xpath = "//a[@href='#Men']")
+    public WebElement categoryMen;
+
+    @FindBy (xpath = "//a[@href='#Kids']")
+    public WebElement categoryKids;
+
+    @FindBy (xpath = "//div[@id='Women']//a[text()='Dress ']")
+    public WebElement subCategoryWomen;
+
+    @FindBy (xpath = "//*[text()='Women - Dress Products']")
+    public WebElement subCategoryWomenTitle;
+
+    @FindBy (xpath = "//div[@id='Men']//a[text()='Jeans ']")
+    public WebElement subCategoryMen;
+
     public void verifyMainPageIsOpen() {
         verifyPageLoaded(logo);
     }

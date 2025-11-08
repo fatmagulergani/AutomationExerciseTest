@@ -25,7 +25,7 @@ public class AutomationExerciseTest3 extends BaseTest{
         mainPage.loginLink.click();
         Assert.assertTrue(signupPage.loginTitle.isDisplayed());
 
-        signupPage.loginEmail.sendKeys(ConfigReader.getProperty("wrongMail") + Keys.TAB + ConfigReader.getProperty("wrongPassword") + Keys.ENTER);
+        signupPage.loginEmail.sendKeys(ConfigReader.getProperty("inValidMail") + Keys.TAB + ConfigReader.getProperty("inValidPassword") + Keys.ENTER);
         Assert.assertTrue(signupPage.incorrectUserWarning.isDisplayed());
 
     }

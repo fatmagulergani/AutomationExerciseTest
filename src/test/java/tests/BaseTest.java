@@ -1,6 +1,7 @@
 package tests;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -123,12 +124,19 @@ public class BaseTest {
         mainPage.loginLink.click();
         Assert.assertTrue(signupPage.loginTitle.isDisplayed());
 
-        signupPage.loginEmail.sendKeys(ConfigReader.getProperty("validEmail")+ Keys.TAB + ConfigReader.getProperty("password") + Keys.ENTER);
+        signupPage.loginEmail.sendKeys(ConfigReader.getProperty("validEmail")+ Keys.TAB + ConfigReader.getProperty("newPassword") + Keys.ENTER);
         Assert.assertTrue(mainPage.loginUser.isDisplayed());
     }
 
     public void setAddProduct(int index){
         actions.scrollByAmount(0,500).perform();
         mainPage.addToCart.get(index).click();
+    }
+
+    public void setSearchProduct(String searchText){
+        productsPage.productSearchBox.sendKeys(searchText);
+        productsPage.productSearchButton.click();
+        Assert.assertTrue(productsPage.searcedProductsText.isDisplayed());
+        Assert.assertTrue(productsPage.productsList.size()>0);
     }
 }

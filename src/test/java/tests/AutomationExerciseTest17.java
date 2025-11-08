@@ -11,7 +11,6 @@ package tests;
 8. Verify that product is removed from the cart
 */
 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -31,14 +30,13 @@ public class AutomationExerciseTest17 extends BaseTest {
         Assert.assertTrue(cartPage.shoppingCartText.isDisplayed());
 
         cartPage.removeProduct.get(0).click();
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(3));
 
-        // Element görünür olana kadar bekle
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(3));
+        //Wait until the element appears
         wait.until(ExpectedConditions.visibilityOf(cartPage.cartEmptyText));
 
         //System.out.println(cartPage.cartEmptyText.getText());
         Assert.assertEquals(cartPage.cartEmptyText.getText(), "Cart is empty!");
-
 
     }
 }

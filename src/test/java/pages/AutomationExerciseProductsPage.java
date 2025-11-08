@@ -65,4 +65,35 @@ public class AutomationExerciseProductsPage {
 
     @FindBy (xpath = "//button[@class='btn btn-default cart']")
     public WebElement addToCartButton;
+
+    @FindBy (xpath = "//*[text()='Brands']")
+    public WebElement brandsTitle;
+
+    @FindBy (xpath = "//a[@href='/brand_products/H&M']")
+    public WebElement brandProductsHM;
+
+    @FindBy (xpath = "//a[@href='/brand_products/Biba']")
+    public WebElement brandProductsBiba;
+
+    @FindBy(xpath = "//h2[contains(text(),'Brand -') and contains(text(),'Products')]")
+    public WebElement subBrandProductsTitle;
+
+    @FindBy (xpath = "//*[text()='Write Your Review']")
+    public WebElement reviewFormTitle;
+
+    @FindBy (xpath = "//input[@id='name']")
+    public WebElement reviewFormName;
+
+    @FindBy (xpath = "//input[@id='email']")
+    public WebElement reviewFormEmail;
+
+    @FindBy (xpath = "//textarea[@id='review']")
+    public WebElement reviewForm;
+
+    @FindBy (xpath = "//button[@id='button-review']")
+    public WebElement submitButton;
+
+    @FindBy (xpath = "//div[@class='alert-success alert']/span")
+    public WebElement successReview;
+
 }
