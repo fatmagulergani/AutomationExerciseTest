@@ -28,7 +28,7 @@ public class AutomationExerciseTest2 extends BaseTest{
 
         Assert.assertTrue(signupPage.loginTitle.isDisplayed());
 
-        signupPage.loginEmail.sendKeys(ConfigReader.getProperty("email") + Keys.TAB + ConfigReader.getProperty("password") + Keys.ENTER);
+        signupPage.loginEmail.sendKeys(ConfigReader.getProperty("newEmail") + Keys.TAB + ConfigReader.getProperty("newPassword") + Keys.ENTER);
         Assert.assertTrue(mainPage.loginUser.isDisplayed());
 
         mainPage.deleteAccount.click();

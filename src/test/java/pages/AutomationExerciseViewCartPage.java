@@ -3,7 +3,6 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.BasePage;
 import utilities.Driver;
 
@@ -61,6 +60,12 @@ public class AutomationExerciseViewCartPage extends BasePage {
 
     @FindBy (xpath = "//p/b[text()='Cart is empty!']")
     public WebElement cartEmptyText;
+
+    @FindBy (xpath = "//a[@href='/login']//u[text()='Register / Login']")
+    public WebElement loginLink;
+
+    @FindBy (xpath = "//a[@class='btn btn-default check_out']")
+    public WebElement downloadInvoiceButton;
 
 
 }

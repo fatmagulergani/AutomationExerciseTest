@@ -3,7 +3,6 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.BasePage;
 import utilities.Driver;
 
@@ -82,6 +81,14 @@ public class AutomationExerciseMainPage extends BasePage {
 
     @FindBy (xpath = "//div[@id='Men']//a[text()='Jeans ']")
     public WebElement subCategoryMen;
+
+    @FindBy (xpath = "//*[text()='recommended items']")
+    public WebElement recommendedItemsTitle;
+
+    @FindBy (xpath = "//div[@class='recommended_items']//a[@class='btn btn-default add-to-cart']")
+    public List<WebElement> recommendedProductsList;
+
+
 
     public void verifyMainPageIsOpen() {
         verifyPageLoaded(logo);

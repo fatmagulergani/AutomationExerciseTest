@@ -1,16 +1,15 @@
 package tests;
 
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Ignore;
-import org.testng.annotations.Test;
 import pages.*;
 import utilities.ConfigReader;
 import utilities.Driver;
+
+import java.io.File;
 
 public class BaseTest {
 
@@ -22,6 +21,7 @@ public class BaseTest {
     AutomationExerciseViewCartPage cartPage = new AutomationExerciseViewCartPage();
     AutomationExercisePaymentPage paymentPage = new AutomationExercisePaymentPage();
     Actions actions = new Actions(Driver.getDriver());
+    String downloadPath = System.getProperty("user.dir") + "/downloads";
 
     @BeforeMethod
     public void setUp() {
@@ -29,14 +29,14 @@ public class BaseTest {
         mainPage.verifyMainPageIsOpen();
     }
 
-    @AfterMethod
+    /*@AfterMethod
     public void tearDown() {
         Driver.closeDriver();
-    }
+    }*/
 
     public void setSignupPage(){
 
-        signupPage.signupName.sendKeys(ConfigReader.getProperty("name") + Keys.ENTER + ConfigReader.getProperty("email") + Keys.ENTER);
+        signupPage.signupName.sendKeys(ConfigReader.getProperty("name") + Keys.ENTER + ConfigReader.getProperty("newEmail") + Keys.ENTER);
 
         actions.click(signupPage.gender)
                 .sendKeys(Keys.TAB)

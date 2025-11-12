@@ -12,8 +12,6 @@ package tests;
 9. Verify success message 'Thank you for your review.'
 */
 
-import com.github.dockerjava.api.model.Config;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
