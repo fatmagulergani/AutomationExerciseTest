@@ -88,7 +88,11 @@ public class AutomationExerciseMainPage extends BasePage {
     @FindBy (xpath = "//div[@class='recommended_items']//a[@class='btn btn-default add-to-cart']")
     public List<WebElement> recommendedProductsList;
 
+    @FindBy (xpath = "//a[@id='scrollUp']")
+    public WebElement scrollUpButton;
 
+    @FindBy (xpath = "//h2[text()='Full-Fledged practice website for Automation Engineers'][1]")
+    public WebElement mainPageText;
 
     public void verifyMainPageIsOpen() {
         verifyPageLoaded(logo);

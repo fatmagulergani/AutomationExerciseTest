@@ -1,9 +1,9 @@
 package tests;
 
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.*;
 import utilities.ConfigReader;
@@ -29,10 +29,10 @@ public class BaseTest {
         mainPage.verifyMainPageIsOpen();
     }
 
-    /*@AfterMethod
+    @AfterMethod
     public void tearDown() {
         Driver.closeDriver();
-    }*/
+    }
 
     public void setSignupPage(){
 
