@@ -9,8 +9,6 @@ import pages.*;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-import java.io.File;
-
 public class BaseTest {
 
     AutomationExerciseMainPage mainPage = new AutomationExerciseMainPage();
@@ -21,7 +19,6 @@ public class BaseTest {
     AutomationExerciseViewCartPage cartPage = new AutomationExerciseViewCartPage();
     AutomationExercisePaymentPage paymentPage = new AutomationExercisePaymentPage();
     Actions actions = new Actions(Driver.getDriver());
-    String downloadPath = System.getProperty("user.dir") + "/downloads";
 
     @BeforeMethod
     public void setUp() {
