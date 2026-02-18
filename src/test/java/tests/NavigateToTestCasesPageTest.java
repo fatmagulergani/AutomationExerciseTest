@@ -14,7 +14,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 
-public class AutomationExerciseTest7 extends BaseTest{
+public class NavigateToTestCasesPageTest extends BaseTest{
 
     @Test
     public void test07(){

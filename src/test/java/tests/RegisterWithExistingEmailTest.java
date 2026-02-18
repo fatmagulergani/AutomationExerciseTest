@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import utilities.ConfigReader;
 
 
-public class AutomationExerciseTest5 extends BaseTest{
+public class RegisterWithExistingEmailTest extends BaseTest{
 
     @Test
     public void test05(){

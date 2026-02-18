@@ -21,7 +21,7 @@ import utilities.Driver;
 
 import java.time.Duration;
 
-public class AutomationExerciseTest21 extends BaseTest {
+public class ProductReviewTest extends BaseTest {
 
     @Test
     public void test21() {

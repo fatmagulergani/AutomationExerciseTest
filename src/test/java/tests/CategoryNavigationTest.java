@@ -15,7 +15,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.Driver;
 
-public class AutomationExerciseTest18 extends BaseTest{
+public class CategoryNavigationTest extends BaseTest{
 
     @Test
     public void test18(){

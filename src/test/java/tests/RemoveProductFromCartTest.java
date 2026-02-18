@@ -19,7 +19,7 @@ import utilities.Driver;
 
 import java.time.Duration;
 
-public class AutomationExerciseTest17 extends BaseTest {
+public class RemoveProductFromCartTest extends BaseTest {
 
     @Test
     public void test17(){

@@ -16,7 +16,7 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AutomationExerciseTest12 extends BaseTest {
+public class AddProductsToCartTest extends BaseTest {
 
     @Test
     public void test12() {

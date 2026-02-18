@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class AutomationExerciseTest6 extends BaseTest{
+public class ContactUsFormTest extends BaseTest{
 
     @Test
     public void test06(){

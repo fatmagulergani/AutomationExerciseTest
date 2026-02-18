@@ -18,7 +18,7 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AutomationExerciseTest20 extends BaseTest {
+public class SearchAddToCartPersistenceTest extends BaseTest {
 
     @Test
     public void test20(){

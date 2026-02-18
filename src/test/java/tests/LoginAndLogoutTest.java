@@ -20,7 +20,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 
-public class AutomationExerciseTest4 extends BaseTest{
+public class LoginAndLogoutTest extends BaseTest{
 
     @Test
     public void test04(){

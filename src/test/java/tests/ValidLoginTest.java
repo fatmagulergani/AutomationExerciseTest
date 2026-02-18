@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 import utilities.ConfigReader;
 
 
-public class AutomationExerciseTest2 extends BaseTest{
+public class ValidLoginTest extends BaseTest{
 
     @Test
     public void test02(){

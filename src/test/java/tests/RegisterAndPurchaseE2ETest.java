@@ -12,30 +12,37 @@ package tests;
 9. Click 'Cart' button
 10. Verify that cart page is displayed
 11. Click Proceed To Checkout
-12. Verify that the delivery address is same address filled at the time registration of account
-13. Verify that the billing address is same address filled at the time registration of account
-14. Click 'Delete Account' button
-15. Verify 'ACCOUNT DELETED!' and click 'Continue' button
+12. Verify Address Details and Review Your Order
+13. Enter description in comment text area and click 'Place Order'
+14. Enter payment details: Name on Card, Card Number, CVC, Expiration date
+15. Click 'Pay and Confirm Order' button
+16. Verify success message 'Your order has been placed successfully!'
+17. Click 'Delete Account' button
+18. Verify 'ACCOUNT DELETED!' and click 'Continue' button
 */
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AutomationExerciseTest23 extends BaseTest{
+
+public class RegisterAndPurchaseE2ETest extends BaseTest{
 
     @Test
-    public void test23(){
+    public void test15(){
         mainPage.loginLink.click();
         setSignupPage();
         signupPage.continueButton.click();
         Assert.assertTrue(mainPage.loginUser.isDisplayed());
+
         setAddProduct(0);
-        productsPage.viewCartLink.click();
-        int actualRowCount = cartPage.cartProduct.size();
-        Assert.assertTrue(actualRowCount > 0, "Tabloda hiç satır yok!");
-        Assert.assertTrue(actualRowCount == 1);
+        mainPage.continueShoppingButton.click();
+        mainPage.cart.click();
+
+        Assert.assertTrue(cartPage.shoppingCartText.isDisplayed());
         cartPage.proceedToCheckoutButton.click();
+
         setAddressControl();
+        setPayment();
         setDeleteAccount();
 
     }

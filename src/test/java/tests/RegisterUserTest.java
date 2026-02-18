@@ -28,7 +28,7 @@ import org.testng.annotations.Test;
 import utilities.ConfigReader;
 
 
-public class AutomationExerciseTest1 extends BaseTest{
+public class RegisterUserTest extends BaseTest{
     @Test
     public void test01() {
         /*Driver.getDriver().get(ConfigReader.getProperty("testLink"));

@@ -15,7 +15,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
 
-public class AutomationExerciseTest10 extends BaseTest {
+public class SubscriptionTest extends BaseTest {
 
     @Test
     public void test10(){

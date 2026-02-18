@@ -29,12 +29,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class AutomationExerciseTest24 extends BaseTest {
+public class RegisterPurchaseAndDownloadInvoiceTest extends BaseTest {
 
     @Test
     public void test24() throws AWTException, InterruptedException {

@@ -23,7 +23,7 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AutomationExerciseTest16 extends BaseTest {
+public class LoginAndPurchaseE2ETest extends BaseTest {
 
     @Test
     public void test16(){
