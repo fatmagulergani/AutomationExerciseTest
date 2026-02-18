@@ -17,6 +17,7 @@ A comprehensive **End-to-End (E2E) Automation** project built to test the core f
 
 ## 📂 Project Structure
 
+```text
 src
 ├── main
 ├── test
@@ -26,6 +27,7 @@ src
 │         └── utilities   (Driver, ConfigReader)
 └── pom.xml
 └── README.md
+```
 
 ## 🚀 How to Run Tests
 
